@@ -30,7 +30,7 @@
             let chatBox = document.getElementById("chat-box");
             chatBox.innerHTML += `<div class='user-msg'><b>You:</b> ${userInput}</div>`;
 
-            fetch("/ask", {
+            fetch("https://justice-chatboy-3.onrender.com", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ query: userInput })
